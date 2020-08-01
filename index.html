@@ -1,281 +1,408 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div id="home">
-  <h1><a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h1>
-  <p>I am a South African developer who usually does website back-ends using Node.js as my primary programming language, however, I am looking for other programming languages to learn. On this website, you will find some information about me, the projects I have done and you can also <a href="#contact">contact me</a>. I also have a <a href="https://blog.ndt3.me/">blog here</a>.</p>
-<br>
-<!--<div class="ad" style="text-align: center;font-size: small;">Advertisement<br><a href="http://a-ads.com?partner=887950">Advertise with Anonymous Ads</a><center><iframe data-aa="887950" src="" data-src="//ad.a-ads.com/887950?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0;overflow:hidden" allowtransparency="true"></iframe></center></div>
-<noscript>
-<div class="ad-ns" style="text-align: center;font-size: small;">Advertisement<br><a href="http://a-ads.com?partner=887950">Advertise with Anonymous Ads</a><center><iframe data-aa="887950" src="//ad.a-ads.com/887950?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0;overflow:hidden" allowtransparency="true"></iframe></center></div>
-</noscript>-->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3285187781774116"
-     data-ad-slot="6751721394"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-  <h1><a id="" class="anchor" href="#projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h1>
-  <p>I have done a few projects. These are listed in the table below. My web design projects are not included as I have not made them myself, I usually use templates for my websites. <strong>Please note: Support is not given unless otherwise stated in the project's GitHub readme file.</strong></p>
-  <table>
-      <thead>
-      <tr>
-      <th>Project</th>
-      <th>Description</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-      <td><a href="https://github.com/NdT3Development/DiscordBot" target="_blank">NdT3 Discord Bot</a></td>
-      <td>A <a href="https://discordapp.com" target="_blank">Discord (Chat app for gamers)</a> bot with moderation features. My first open source project.</td>
-      </tr>
-      <tr>
-      <td><a href="https://github.com/NdT3Development/nodejswebserverproxy" target="_blank">Node.JS Web Server Proxy</a></td>
-      <td>This is just simple code to give people an idea for how to run a web server with multiple domains using a proxy made with Node.JS. Not intended for production</td>
-      </tr>
-      <tr>
-      <td>Node.JS Random Number Between - <a href="https://github.com/NdT3Development/nodejs-random-number-between" target="_blank">On GitHub</a> / <a href="https://npmjs.com/package/random-number-between" target="_blank">On NPM</a></td>
-      <td>A simple Node.JS module for generating random numbers between two numbers. Can generate multiple random numbers. Returns results in array</td>
-      </tr>
-      <tr>
-      <td><a href="https://github.com/NdT3Development/nodejswebserver" target="_blank">Node.JS Static File Web Server</a></td>
-      <td>A static file web server made in Node.JS</td>
-      </tr>
-      <tr>
-      <td><a href="https://github.com/NdT3Development/nodeupload" target="_blank">NodeUpload</a></td>
-      <td>NodeUpload is a Node.JS server application that lets you run your own private file upload service.</td>
-      </tr>
-      </tbody>
-      </table>
-      <p>Projects not ready for use are not included.</p>
-      <h1><a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact Me</h1>
-      <script type="text/javascript">
-        // Parse the URL parameter
-        function getParameterByName(name, url) {
-            if (!url) url = window.location.href;
-            name = name.replace(/[\[\]]/g, "\\$&");
-            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-                results = regex.exec(url);
-            if (!results) return null;
-            if (!results[2]) return '';
-            return decodeURIComponent(results[2].replace(/\+/g, " "));
-        }
-        // Give the parameter a variable name
-        var dynamicContent = getParameterByName('contactstatus');
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TrueWinter</title>
+    <link rel="icon" type="image/jpeg" sizes="16x16" href="/assets/img/tw-temp-new-logo-sq-v2-16.jpg">
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="/assets/img/tw-temp-new-logo-sq-v2-32.jpg">
+    <link rel="icon" type="image/jpeg" sizes="180x180" href="/assets/img/tw-temp-new-logo-sq-v2-180.jpg">
+    <link rel="icon" type="image/jpeg" sizes="192x192" href="/assets/img/tw-temp-new-logo-sq-v2-192.jpg">
+    <link rel="icon" type="image/jpeg" sizes="512x512" href="/assets/img/tw-temp-new-logo-sq-v2-512.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+</head>
 
-         $(document).ready(function() {
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-dark navigation-clean">
+        <div class="container-fluid"><a class="navbar-brand" href="/" style="padding: 0px;margin: 0px;"><img src="/assets/img/tw-temp-new-logo-sq-v2-64.jpg" style="margin: 0px;height: 64px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link nav-sep" href="https://blog.truewinter.dev">Blog</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div data-bs-parallax-bg="true" style="height: 300px;background: url(/assets/img/20200730_190232_ec.jpg) center / cover;">
+        <div class="d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="height: 300px;">
+            <div>
+                <div class="d-block">
+                    <p style="color: #dfe8ee;font-size: 32px;text-align: center;">TrueWinter</p>
+                    <div class="social-icons"><a href="https://l.truewinter.dev/github" target="_blank"><i class="fab fa-github"></i></a><a href="https://l.truewinter.dev/twitter" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://blog.truewinter.dev/" target="_blank"><i class="fas fa-blog"></i></a>
+                        <a
+                            href="https://l.truewinter.dev/discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 16px;color: #dfe8ee;">
+        <h1 id="about">About Me</h1>
+        <p>I'm TrueWinter, a software and website developer from South Africa. I also find and responsibly disclose security vulnerabilities. I have knowledge in the following:</p>
+        <div class="row">
+            <div class="col-md-auto col-lg-4">
+                <h2>Programming</h2>
+                <ul>
+                    <li>Node.js</li>
+                    <li>PHP</li>
+                    <li>Bash</li>
+                    <li>Java (very basic)</li>
+                </ul>
+            </div>
+            <div class="col-md-auto col-lg-4">
+                <h2>Websites</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Website Security</li>
+                </ul>
+            </div>
+            <div class="col-md-auto col-lg-4">
+                <h2>Servers</h2>
+                <ul>
+                    <li>Linux</li>
+                    <li>DNS</li>
+                    <li>REST APIs</li>
+                    <li>pfSense</li>
+                    <li>Email (basic)</li>
+                </ul>
+            </div>
+        </div>
+        <h1 id="projects">Projects</h1>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><strong>Project</strong></th>
+                        <th><strong>Description</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://github.com/NdT3Development/DiscordBot">Discord Bot</a><br></td>
+                        <td>A <a href="https://discordapp.com">Discord (Chat app for gamers)</a> bot with moderation features. My first open source project.<br></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/NdT3Development/nodejswebserverproxy">Node.JS Web Server Proxy</a><br></td>
+                        <td>This is just simple code to give people an idea for how to run a web <br>server with multiple domains using a proxy made with Node.JS. Not <br>intended for production<br></td>
+                    </tr>
+                    <tr>
+                        <td>Node.JS Random Number Between - <a href="https://github.com/NdT3Development/nodejs-random-number-between">On GitHub</a> / <a href="https://npmjs.com/package/random-number-between">On NPM</a><br></td>
+                        <td>A simple Node.JS module for generating random numbers between two <br>numbers. Can generate multiple random numbers. Returns results in array<br></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/NdT3Development/nodejswebserver">Node.JS Static File Web Server</a><br></td>
+                        <td>A static file web server made in Node.JS<br></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/NdT3Development/nodeupload">NodeUpload</a><br></td>
+                        <td>NodeUpload is a Node.JS server application that lets you run your own private file upload service.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/NdT3Development/NdT3Links">NdT3Links</a></td>
+                        <td>A simple URL shortener</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 id="contact">Contact</h1>
+        <div class="contact-clean" style="padding: 16px 0px;">
+            <form id="contact-form" method="post" style="padding: 0px;">
+                <div id="contact-form-result"></div>
+                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+                <div class="form-group"><div class="g-recaptcha d-inline-flex" data-sitekey="6LeIjiwUAAAAAJTldNRQIgPEgF-FF8Arsym0CFNW" data-theme="dark" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpiredCallback"></div>
+<script id="recaptcha-lazy" data-src="https://www.google.com/recaptcha/api.js"></script>
 
-          // Check if the URL parameter is apples
-          if (dynamicContent == 'sent') {
-            $('#contactsent').fadeIn();
-            document.getElementById('contactsent').scrollIntoView();
-          }
-          if (dynamicContent == 'failed') {
-            $('#contactfailed').fadeIn();
-            document.getElementById('contactfailed').scrollIntoView();
-          }
-          if (dynamicContent == 'required') {
-            $('#contactrequired').fadeIn();
-            document.getElementById('contactrequired').scrollIntoView();
-          }
-          if (dynamicContent == 'notvalid') {
-            $('#contactnotvalid').fadeIn();
-            document.getElementById('contactnotvalid').scrollIntoView();
-          }
-          //var newvalue = window.location.pathname;
-          //var newvalue2.replace('\?contactsuccess=true', "");
-        });
-      </script>
-      <p>Want to email me? Just fill out the form below and I will try to reply as soon as possible.</p>
-      <span id="contactMessage"></span>
-      <p id="check-server">Checking if the contact form server is online. Please wait...</p>
-      <p id="connection-down">It seems like your internet connection is down. Please wait or try again later</p>
-      <p id="server-down">Unfortunately, the contact form server is down. Please try again later. <button onclick="reloadcheck(function(d){});">Re-check</button></p>
-      <p id="contactfailed"></p>
-      <p id="contactsent">Message sent</p>
-      <p id="contactsending">Message sending...</p>
-      <form id="email-contact" action="https://contact-api-gfcf.ndt3.me/contact" method="post" style="position: relative; display: block;" _lpchecked="1">
-	<div id="contact-form-loader-icon" style="display:none;">
-		<div class="contact-form" style="position: absolute;width: 100%;height: 100%;z-index: 10;background-color: rgba(128, 128, 128, 0.5);"></div>
-	      	<div class="contact-loader" style="position: absolute;margin: auto;left: 45%;top: 35%;z-index: 11;">
-	      		<img id="contact-loader-icon" data-src="https://www.ndt3.me/loading.gif">
-			<script>window.addEventListener("load", function() {$('#contact-loader-icon').attr('src', $('#contact-loader-icon').attr('data-src'));});</script>
-		</div>
-	</div>
-           <input type="text" name="name" placeholder="Name">
-           <input type="text" name="email" placeholder="Email" size="40"><br>
-           <textarea name="message" rows="8" cols="39" placeholder="Message"></textarea><br>
-           <div class="g-recaptcha" data-sitekey="6LeIjiwUAAAAAJTldNRQIgPEgF-FF8Arsym0CFNW"></div><br>
-           <input type="submit" name="submit" value="Send"><br><br>
-	</form>
-       <!--<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>-->
-       <!-- Checks if contact form server is online -->
-      <noscript>
-        <style type="text/css">
-          #email-contact {display:none;}
-          </style>
-          <div class="nojs">
-              You don't have Javascript enabled in your browser. Unfortunately, the contact form uses Javascript to function properly. Please enable it to use this contact form.
-          </div>
-      </noscript>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/offline-js/0.7.19/offline.min.js"></script>
 <script>
-Offline.options = {requests: false, checks: {image: {url: 'check-i.png'}, active: 'image'}}
-Offline.on('up', function () {
-	$('#check-server').hide();
-        $('#email-contact').show();
-        $('#server-down').hide();
-	$('#connection-down').hide();
-});
-Offline.on('down', function () {
-	$('#check-server').hide();
-	$('#email-contact').hide();
-	$('#server-down').hide();
-	$('#connection-down').show();
-	$('#contactsending').hide();
-	$('#contactsent').hide();
-        $('#contactfailed').hide();
-});
-</script>
-	
-<!--<div class="ad" style="text-align: center;font-size: small;">Advertisement<br><a href="http://a-ads.com?partner=887950">Advertise with Anonymous Ads</a><center><iframe data-aa="887950" src="" data-src="//ad.a-ads.com/887950?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0;overflow:hidden" allowtransparency="true"></iframe></center></div>
-<noscript>
-<div class="ad-ns" style="text-align: center;font-size: small;">Advertisement<br><a href="http://a-ads.com?partner=887950">Advertise with Anonymous Ads</a><center><iframe data-aa="887950" src="//ad.a-ads.com/887950?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0;overflow:hidden" allowtransparency="true"></iframe></center></div>
-</noscript>-->
-<!-- AD-U1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3285187781774116"
-     data-ad-slot="6751721394"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script> 
-	var checkNumber = 0;
-
-	function reloadcheck(cb) {
-		$.get('https://contact-api-gfcf.ndt3.me/check.png?reload=' + new Date().getTime())
-		.done(function() {
-			$('#check-server').hide();
-			$('#email-contact').show();
-			$('#server-down').hide();
-			$('#connection-down').hide();
-			checkNumber = 0;
-			console.log('Connection successful');
-			cb('Connection successful');
-		}).fail(function() {
-			if (Offline.state !== 'down') {
-				$('#email-contact').hide()
-				$('#check-server').hide();
-				$('#server-down').show();
-				$('#contactsending').hide();
-				$('#contactsent').hide();
-				$('#contactfailed').hide();
-			}
-			if (document.getElementsByName('name')[0].value !== "" || document.getElementsByName('email')[0].value !== "" || document.getElementsByName('message')[0].value !== "") { // Only scroll into view if the user has filled out the form or is busy doing so
-				if (checkNumber === 0) {
-					$('html, body').animate({
-						scrollTop: $("#contactMessage").offset().top - 10
+		var doNotSetURLToHome = false;
+		var bsDoNotSetURL = false;
+		    
+        window.addEventListener('load', function() {
+			$("#contact-form").submit(function (e) {
+				e.preventDefault();
+				var post = true;
+				$('[name="email"]').first().removeClass('invalid-form-data');
+				$('[name="name"]').first().removeClass('invalid-form-data');
+				$('[name="message"]').first().removeClass('invalid-form-data');
+				if (recaptcha) {
+					$(".g-recaptcha").first().removeClass('invalid-form-data');
+				}
+				var red = "#F66";
+				if (!($('[name="email"]')[0].value.match(/^[a-zA-Z0-9-.]+@[a-zA-Z0-9-.]+\.[a-zA-Z]{2,6}$/gi))) {
+					$('[name="email"]').first().addClass('invalid-form-data');
+					post = false;
+				}
+				if(!($('[name="name"]')[0].value.match(/^[a-zA-Z0-9\'\- ]+$/gi))) {
+					$('[name="name"]').first().addClass('invalid-form-data');
+					post = false;
+				}
+				if ($('[name="message"]')[0].value == "") {
+					$('[name="message"]').first().addClass('invalid-form-data');
+					post = false;
+				}
+				if (grecaptcha) {
+					if (grecaptcha.getResponse() === "") {
+						$(".g-recaptcha").first().addClass('invalid-form-data');
+						post = false;
+					}
+				}
+				if (post) {
+					$('#contact-form-btn').hide();
+					$('#contact-form-spinner').show();
+					$.ajax({
+						type: "POST",
+						data : $(this).serialize(),
+						cache: false,
+						url: 'https://it.wd.ndt3.me/web-contact/contact.php',
+						success: function(data){
+							$('#contact-form-btn').show();
+							$('#contact-form-spinner').hide();
+							$("#contact-form-result").html(data.message);
+							if (data.sent === false) {
+								$("#contact-form-result")[0].style = "background-color:"+red+";border-radius:5px;padding:10px;margin-bottom:8px;color:white;";
+							} else {
+								$("#contact-form-result")[0].style = "background-color:rgb(48, 48, 48);border-radius:5px;padding:10px;margin-bottom:8px;display:inline-block;color:white;";
+								$("#contact-form")[0].reset();
+							}
+							if (grecaptcha) {
+								grecaptcha.reset();
+							}
+							$("html, body").animate({
+								scrollTop: $("#contact").offset().top - 100
+							}, 500);
+						}
+					});
+				} else {
+                    $('.invalid-form-data').off('input');
+                    $('.invalid-form-data').on('input', function(e) {
+                        if ($(e.target).val() === "") {
+                            $(e.target).addClass('invalid-form-data');
+                        } else {
+                            $(e.target).removeClass('invalid-form-data');
+                        }
+                    });
+					$("html, body").animate({
+						scrollTop: $("#contact").offset().top - 100
 					}, 500);
 				}
-		}
-			//var i = 0;
-			/*if (checkNumber % 5 === 0) {
-				console.log('Don\'t worry about these errors. It\'s just the automatic check for when the contact form back-end will be online. You can see the status at https://status.ndt3.me')
-			}
-			checkNumber++;*/
-			console.log('Connection failed');
-			cb('Connection failed');
-		});
-	}
-	
-	$('#email-contact').hide();
-	$('#check-server').show();
-	
-	function lCheck() {
-		reloadcheck(function(d){});
-		//window.setInterval(reloadcheck, 10000);
-	}
-
-	$('#email-contact').submit(function() {
-		$(this).ajaxSubmit({
-		error: function(xhr) {
-			$('#contactfailed').fadeIn();
-			document.getElementById('contactfailed').innerHTML = 'Error: ' + xhr.status;
-			$('#contact-form-loader-icon').hide();
-		},
-		beforeSend: function(xhr) {
-			reloadcheck(function(d) {
-				console.log('R: ' + d);
-				if (d === 'Connection failed') {
-					xhr.abort();
-				}
+				return false;
 			});
-			$('html, body').animate({
-				scrollTop: $("#contactMessage").offset().top - 10
-			}, 500);
-			//$('#email-contact').fadeOut();
-			$('#contact-form-loader-icon').show();
-			$('#contactfailed').fadeOut();
-			$('#contactsending').fadeIn();
-		},
-		success: function(response) {
-			if (response.responseCode === 1) {
-				$('#contactsending').fadeOut();
-				//$('#email-contact').fadeIn();
-				$('#contact-form-loader-icon').hide();
-				$('#contactfailed').fadeIn();
-				document.getElementById('contactfailed').innerHTML = response.responseDesc;
-				 $('html, body').animate({
-				scrollTop: $("#contactMessage").offset().top - 10
-				}, 500);
+            
+            // https://coderwall.com/p/fnvjvg/jquery-test-if-element-is-in-viewport
+    
+            $.fn.isOnScreen = function() {
+
+                var win = $(window);
+
+                var viewport = {
+                    top : win.scrollTop(),
+                    left : win.scrollLeft()
+                };
+                viewport.right = viewport.left + win.width();
+                viewport.bottom = viewport.top + win.height();
+
+                var bounds = this.offset();
+                bounds.right = bounds.left + this.outerWidth();
+                bounds.bottom = bounds.top + this.outerHeight();
+
+                return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+            }
+            
+            function loadRecaptchaIfInViewport() {
+                if($('.g-recaptcha').isOnScreen()) {
+                    if (!$('#recaptcha-lazy').attr('src')) {
+                        $('#recaptcha-lazy').attr('src', $('#recaptcha-lazy').data('src'));
+                    }
+                }
+            }
+            
+            if (location.hash && $(location.hash).length > 0) {
+                $('html,body').animate({
+                    scrollTop: $(location.hash).offset().top - $('.navbar').outerHeight()
+                });
+            }
+            
+            $('body').scrollspy({ target: 'body', offset: $('.navbar').outerHeight() * 3 });
+            $(window).on('activate.bs.scrollspy', function (e) {
+                if (!bsDoNotSetURL) {
+                    var u = new URL($('.navbar .active')[0].href);
+                    history.pushState(null, null, '/'+u.hash);
+                }
+            });
+            $(window).on('scroll', function() {
+                if ($('.navbar .active').length === 0 && !doNotSetURLToHome) {
+                    history.pushState(null, null, '/');
+                }
+            });
+            
+            /*var l = $('.navbar .nav-link');
+
+            for (var i = 0; i < l.length; i++) {
+                if (l[i].href.indexOf('#') > 1 && l[i].href.indexOf(location.host) > 1) {
+					//console.log('hi');
+					if (location.pathname !== '/') {
+						console.log($(l[i]).attr('href'));
+						//$(l[i]).attr('href', '/' + $(l[i]).attr('href')); 
+					}
+                    $(l[i]).on('click', function(e) {
+                        e.preventDefault();
+                        var u = new URL(e.target.href);
+                        //console.log(u.hash);
+                        if ($(u.hash).length > 0) {
+                            doNotSetURLToHome = true;
+                            bsDoNotSetURL = true;
+                            $('html,body').animate({
+                                scrollTop: $(u.hash).offset().top - $('.navbar').outerHeight()
+                            });
+                            history.pushState(null, null, '/'+u.hash);
+                            setTimeout(function() {
+                                doNotSetURLToHome = false;
+                                bsDoNotSetURL = false;
+                            },500);
+                        }
+                    });
+                }
+            }*/
+            
+            $('.navbar-brand').on('click', function(e) {
+                e.preventDefault();
+                doNotSetURLToHome = true;
+                bsDoNotSetURL = true;
+                $('html,body').animate({
+                    scrollTop: $('body').offset().top
+                });
+                history.pushState(null, null, '/');
+                setTimeout(function() {
+                    doNotSetURLToHome = false;
+                    bsDoNotSetURL = false;
+                },500);
+            });
+            
+            $(window).on('scroll', function() {
+                loadRecaptchaIfInViewport();
+            });
+            
+            loadRecaptchaIfInViewport();
+            
+            window.recaptchaCallback = function() {
+                $(".g-recaptcha").first().removeClass('invalid-form-data');
+            }
+            
+            window.recaptchaExpiredCallback = function() {
+                $(".g-recaptcha").first().addClass('invalid-form-data');
+            }
+        });
+	</script></div>
+                <div class="form-group"><button class="btn btn-primary" id="contact-form-btn" type="submit">send </button><span class="spinner-border text-success" role="status" id="contact-form-spinner" style="display:none;"></span></div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Some heading here...</h3>
+                        <ul>
+                            <li><a href="https://status.truewinter.dev" target="_blank">Status</a></li>
+                            <li><a href="/reflinks.html">Referral Links</a></li>
+                            <li><a href="https://donate.truewinter.dev" target="_blank">Donate</a></li>
+                            <li><a href="https://phishtest.truewinter.dev" target="_blank">PhishTest</a></li>
+                            <li><a href="https://somebody-on.cc" target="_blank">somebody-on.cc&nbsp;</a><a href="/somebody-on.cc.html">(why?) </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="/legal/privacy.html">Privacy Policy</a></li>
+                            <li><a href="/legal/security.html">Security</a></li>
+                            <li><a href="/legal/disclaimer.html">Email Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>TrueWinter</h3>
+                        <p>I'm probably more well-known by my previous online name, NdT3, but I never really liked that name.</p>
+                    </div>
+                    <div class="col item social">
+                        <div class="social-icons"><a href="https://l.truewinter.dev/github" target="_blank"><i class="fab fa-github"></i></a><a href="https://l.truewinter.dev/twitter" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://blog.truewinter.dev" target="_blank"><i class="fas fa-blog"></i></a>
+                            <a
+                                href="https://l.truewinter.dev/discord" target="_blank"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="copyright">Nicholis du Toit © 2020</p>
+            </div>
+        </footer><!--<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>-->
+<script>
+//var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+//});
+    
+    window.addEventListener('load', function() {
+		
+		var l = $('.navbar .nav-link');
+
+		for (var i = 0; i < l.length; i++) {
+			if (l[i].href.indexOf('#') > 1 && l[i].href.indexOf(location.host) > 1) {
+				//console.log('hi');
+				if (location.pathname !== '/') {
+					console.log($(l[i]).attr('href'));
+					$(l[i]).attr('href', '/' + $(l[i]).attr('href')); 
+				} else {
+					$(l[i]).on('click', function(e) {
+						e.preventDefault();
+						var u = new URL(e.target.href);
+						//console.log(u.hash);
+						if ($(u.hash).length > 0) {
+							doNotSetURLToHome = true;
+							bsDoNotSetURL = true;
+							$('html,body').animate({
+								scrollTop: $(u.hash).offset().top - $('.navbar').outerHeight()
+							});
+							history.pushState(null, null, '/'+u.hash);
+							setTimeout(function() {
+								doNotSetURLToHome = false;
+								bsDoNotSetURL = false;
+							},500);
+						}
+					});
+				}
 			}
-			if (response.responseCode === 0) {
-				$('#contactsending').fadeOut();
-				//$('#email-contact').fadeOut();
-				$('#email-contact')[0].reset();
-				$('#contact-form-loader-icon').hide();
-				grecaptcha.reset()
-				$('#contactsent').fadeIn();
-				$('#contactfailed').fadeOut();
-				document.getElementById('contactsent').innerHTML = response.responseDesc;
-			}
+		}
+		
+		if (location.pathname === '/') {
+			$('.navbar-brand').on('click', function(e) {
+				e.preventDefault();
+				doNotSetURLToHome = true;
+				bsDoNotSetURL = true;
+				$('html,body').animate({
+					scrollTop: $('body').offset().top
+				});
+				history.pushState(null, null, '/');
+				setTimeout(function() {
+					doNotSetURLToHome = false;
+					bsDoNotSetURL = false;
+				},500);
+			});
 		}
 	});
-	return false;
-});
-function iFrameLL() {
-	var iframeDefer = document.getElementsByTagName('iframe');
-	for (var i=0; i<iframeDefer.length; i++) {
-		if(iframeDefer[i].getAttribute('data-src')) {
-			iframeDefer[i].setAttribute('src',iframeDefer[i].getAttribute('data-src'));
-		}
-	}
+</script></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.min.js"></script>
+</body>
 
-}
-function loadAdScript() {
-	var element = document.createElement("script");
-	element.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-	document.body.appendChild(element);
-	(adsbygoogle = window.adsbygoogle || []).push({});
-	(adsbygoogle = window.adsbygoogle || []).push({});
-	
-}
-function init() {
-	lCheck();
-	iFrameLL();
-	loadAdScript();
-}
-window.onload = init;
-</script>
-<noscript>
-<style>
-.ad {
-display:none;
-}
-.ad-ns {
-display:block;
-}
-</style>
-</noscript>
-</div>
+</html>
