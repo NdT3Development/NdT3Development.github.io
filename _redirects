@@ -1,7 +1,7 @@
 https://ndt3.me/* https://truewinter.dev/:splat 301!
 https://www.ndt3.me/* https://truewinter.dev/:splat 301!
-http://ndt3.me/* https://truewinter.dev/:splat 301!
-http://www.ndt3.me/* https://truewinter.dev/:splat 301!
+http://ndt3.me/* http://truewinter.dev/:splat 301!
+http://www.ndt3.me/* http://truewinter.dev/:splat 301!
 https://ndt3website.netlify.com/* https://truewinter.dev/:splat 301!
 http://ndt3website.netlify.com/* https://truewinter.dev/:splat 301!
 /.well-known/security.txt /legal/security 301
