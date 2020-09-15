@@ -54,24 +54,27 @@
             <li>Spamming</li>
             <li>Social engineering (including phishing)</li>
             <li>Any physical attempts against data centers or offices</li>
-            <li>Accessing confidential information such as financial resources, emails, etc.</li>
+            <li>Accessing confidential information such as financial resources, emails, etc. If you do access any of these resources, it is requested that you <strong>immediately</strong> stop testing, delete any confidential information you gathered and
+                email me.</li>
             <li>High volume automated scanning without prior permission</li>
         </ul>
         <p> Please include the following in your report: </p>
         <ul>
             <li>Description of the vulnerability</li>
             <li>Steps to reproduce the vulnerability</li>
-            <li>Proof of exploitability</li>
+            <li>Proof of exploitability (such as a screenshot or video)</li>
             <li>Impact</li>
             <li>CVSSv3 Score</li>
             <li>Proof of Concept</li>
             <li>Browser, OS and, if applicable, app version used during testing</li>
             <li>IP Address(es) from which testing was done</li>
         </ul>
-        <p><strong>Please note that no monetary rewards will be given for security issues</strong><br>Report security issues using the contact form at&nbsp;<a href="https://truewinter.dev/#contact" target="_blank">https://truewinter.dev/#contact</a><br></p>
+        <p><strong>Please note that no monetary rewards will be given for security issues reported.</strong><br>To report a security vulnerability, please send a short summary of the vulnerability using the contact form at&nbsp;<a href="https://truewinter.dev/#contact"
+                target="_blank">https://truewinter.dev/#contact</a>. I will then email you back to request further information.</p>
         <h2>In scope:</h2>
         <ul>
             <li>*.truewinter.dev</li>
+            <li>*.trwntr.cloud</li>
             <li>*.ndt3.me</li>
             <li>*.somebody-on.cc (Please note that some subdomains may become out of scope in the future)</li>
             <li>Client websites (See <a href="https://ndtweb.freshdesk.com/support/solutions/articles/44000285387">https://ndtweb.freshdesk.com/support/solutions/articles/44000285387</a>)</li>
@@ -82,13 +85,11 @@
             <li>img.somebody-on.cc (Domain used for image hosting. Content on this domain may be uploaded by other users of the file host)</li>
             <li>*.rs.somebody-on.cc (Used for research)</li>
             <li>*.e.truewinter.dev (SendGrid)</li>
-            <li>*.ndt3.cloud</li>
-            <li>*.ndt3.top</li>
-            <li>*.ndt3.ml (While I do control this domain for the time being, it will only be used for a redirect and no content will be hosted on this domain due to previous issues with the domain registrar)</li>
-            <li>*.ndtweb.cf</li>
-            <li>*.ndtweb.tk</li>
+            <li>*.za-int.trwntr.cloud (Used for internal servers behind NAT)</li>
+            <li>hz-ns*.trwntr.cloud (Externally managed DNS servers)</li>
+            <li>*.ndt3.cloud (Replaced by trwntr.cloud)</li>
+            <li>*.ndt3.top (Old CDN domain)</li>
             <li>ndtweb.freshdesk.com (Externally hosted support system)</li>
-            <li>*.ndt3-servers.ml (Previously used to have all servers under one domain; no longer used)</li>
             <li>Self XSS</li>
             <li>Missing cookie flags</li>
             <li>SSL/TLS Best Practices</li>
@@ -98,20 +99,14 @@
             <li>Known vulnerabilities in libraries without proof of concept</li>
             <li>Research servers:
                 <ul>
-                    <li>138.xx.xxx.82<br></li>
+                    <li>*-rsr*.trwntr.cloud</li>
                 </ul>
             </li>
-            <li>VPN&nbsp;servers:
-                <ul>
-                    <li>159.xx.xxx.14<br></li>
-                </ul>
-            </li>
-            <li>Servers only set up to demonstrate a security vulnerability in another company's system. Current PoC servers:
+            <li>PoC servers:
                 <ul>
                     <li>88.xxx.xxx.30<br></li>
                 </ul>
             </li>
-            <li>Domains only bought to demonstrate a security vulnerability in another company's system.</li>
             <li>Archived repositories on GitHub</li>
             <li>Repositories marked as not production ready</li>
         </ul>
@@ -128,6 +123,7 @@
                             <li><a href="https://donate.truewinter.dev" target="_blank">Donate</a></li>
                             <li><a href="https://phishtest.truewinter.dev" target="_blank">PhishTest</a></li>
                             <li><a href="https://somebody-on.cc" target="_blank">somebody-on.cc&nbsp;</a><a href="/somebody-on.cc.html">(why?) </a></li>
+                            <li style="opacity: 0.60;">DN42: AS4242420737</li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
