@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="copyright">Nicholis du Toit © 2020</p>
+                <p id="copyright" class="copyright">Nicholis du Toit © 2020</p>
             </div>
         </footer><!--<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>-->
 <script>
@@ -193,6 +193,11 @@
 				},500);
 			});
 		}
+        
+        var copyrightNotice = document.getElementById('copyright');
+        var thisYear = new Date().getFullYear();
+    
+        copyrightNotice.innerText = copyrightNotice.innerText += ` - ${thisYear}`;
 	});
 </script>
 <script data-cfasync="false" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" async defer></script>
