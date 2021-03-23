@@ -168,7 +168,7 @@
 			if (l[i].href.indexOf('#') > 1 && l[i].href.indexOf(location.host) > 1) {
 				//console.log('hi');
 				if (location.pathname !== '/') {
-					console.log($(l[i]).attr('href'));
+					//console.log($(l[i]).attr('href'));
 					$(l[i]).attr('href', '/' + $(l[i]).attr('href')); 
 				} else {
 					$(l[i]).on('click', function(e) {
