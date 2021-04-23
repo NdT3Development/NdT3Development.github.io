@@ -53,7 +53,7 @@
 	
 		function showMap() {
 			// initialize Leaflet
-			var map = L.map('anycast-map', {zoomControl: false, scrollWheelZoom: false, dragging: false}).setView({lon: 0, lat: 0}, 2);
+			var map = L.map('anycast-map', {zoomControl: false, scrollWheelZoom: false, dragging: false}).setView({lon: 0, lat: 0}, document.body.clientWidth < 768 ? 0 : 1);
 
 			// add the OpenStreetMap tiles
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
