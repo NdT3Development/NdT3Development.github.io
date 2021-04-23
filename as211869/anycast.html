@@ -73,7 +73,11 @@
 							{name: 'Dallas, US', location: {lat: 32.7791, lon: -96.8088}}];
 			
 			for (var i = 0; i < locations.length ; i++) {
-				L.marker(locations[i].location, {icon: icons.blue}).bindPopup(locations[i].name).addTo(map);
+				var _m = L.marker(locations[i].location, {icon: icons.blue}).bindPopup(locations[i].name).addTo(map);
+                _m.on('tooltipclose', function() {
+                    map.invalidateSize();
+                    map.setZoom(document.body.clientWidth < 768 ? 0 : 1);
+                });
 			}
 
 		}
