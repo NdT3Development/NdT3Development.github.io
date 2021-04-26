@@ -49,6 +49,7 @@
         </ul>
         <p>A map of the anycast network has been included below:</p>
         <div id="anycast-map"></div><div id="anycast-map-resources"></div>
+<div class="alert alert-info" style="margin-top:16px" id="anycast-connected-pop">Checking the PoP you will connect to...</div>
 <script>
 	
 		function showMap() {
@@ -102,10 +103,19 @@
                 href: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css'
             }));
         }
+    
+        function getPoP() {
+            var _div = document.getElementById('anycast-connected-pop');
+            $.get('https://pop.anycast.as211869.net/').done(function(data) {
+                _div.innerText = `You are connecting to ${data}`;
+            }).fail(function() {
+                _div.innerText = `Unable to determine PoP. Do you have an IPv6 connection?`;
+            });
+        }
 		
 		window.addEventListener('load', function() {
             loadResources();
-			//showMap();
+			getPoP();
 		});
     </script></div>
     <div class="footer-dark">
