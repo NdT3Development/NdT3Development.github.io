@@ -106,7 +106,7 @@
     
         function getPoP() {
             var _div = document.getElementById('anycast-connected-pop');
-            $.get('https://pop.anycast.as211869.net/').done(function(data) {
+            $.get(`https://pop.anycast.as211869.net/?_cache=${Date.now()}`).done(function(data) {
                 _div.innerText = `You are connecting to ${data}`;
             }).fail(function() {
                 _div.innerText = `Unable to determine PoP. Do you have an IPv6 connection?`;
