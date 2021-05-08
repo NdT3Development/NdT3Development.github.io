@@ -172,7 +172,7 @@
 						type: "POST",
 						data : $(this).serialize(),
 						cache: false,
-						url: 'https://it.wd.ndt3.me/web-contact/contact.php',
+						url: 'https://contact.nicholis.co.za/contact.php',
 						success: function(data){
 							$('#contact-form-btn').show();
 							$('#contact-form-spinner').hide();
@@ -180,7 +180,7 @@
 							if (data.sent === false) {
 								$("#contact-form-result")[0].style = "background-color:"+red+";border-radius:5px;padding:10px;margin-bottom:8px;color:white;";
 							} else {
-								$("#contact-form-result")[0].style = "background-color:rgb(48, 48, 48);border-radius:5px;padding:10px;margin-bottom:8px;display:inline-block;color:white;";
+								$("#contact-form-result")[0].style = "background-color:rgb(44, 98, 33);border-radius:5px;padding:10px;margin-bottom:8px;display:inline-block;color:white;";
 								$("#contact-form")[0].reset();
 							}
 							if (grecaptcha) {
